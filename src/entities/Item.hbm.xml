@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 3, 2022 1:23:10 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entities.Item" table="item" catalog="billingsystem" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="Id" />
+            <generator class="assigned" />
+        </id>
+        <property name="iname" type="string">
+            <column name="iName" length="100" />
+        </property>
+        <property name="price" type="java.lang.Integer">
+            <column name="price" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="200" />
+        </property>
+        <property name="available" type="string">
+            <column name="available" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
